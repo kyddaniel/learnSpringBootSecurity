@@ -1,6 +1,5 @@
-package com.kyddaniel.learnSpringBootSecurity;
+package com.kyddaniel.learnSpringBootSecurity.controller;
 
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

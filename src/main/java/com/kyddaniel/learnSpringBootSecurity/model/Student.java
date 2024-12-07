@@ -1,6 +1,5 @@
-package com.kyddaniel.learnSpringBootSecurity;
+package com.kyddaniel.learnSpringBootSecurity.model;
 
-import jdk.jfr.DataAmount;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
