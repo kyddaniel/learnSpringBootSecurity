@@ -2,6 +2,7 @@ package com.kyddaniel.learnSpringBootSecurity.service;
 
 import com.kyddaniel.learnSpringBootSecurity.dao.UserRepo;
 import com.kyddaniel.learnSpringBootSecurity.model.User;
+import com.kyddaniel.learnSpringBootSecurity.model.UserPrincipal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -23,6 +24,6 @@ public class MyUserDetailsService implements UserDetailsService {
             throw new UsernameNotFoundException("User not found");
         }
 
-        return user;
+        return new UserPrincipal(user);
     }
 }
