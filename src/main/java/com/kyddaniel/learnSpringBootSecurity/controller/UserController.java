@@ -30,7 +30,7 @@ public class UserController {
     }
 
     @PostMapping("login")
-    public String login(@RequestBody User user) { System.out.println("login called");
+    public String login(@RequestBody User user) {
 
         Authentication authentication = authenticationManager
                 .authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword()));
